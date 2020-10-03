@@ -1,8 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto+Condensed:wght@300;400;500&display=swap");
+
+@font-face {
+  font-family: Insomnia;
+  src: url("/assets/Insomnia\ 1.ttf");
+}
+
+@font-face {
+  font-family: Asylum;
+  src: url("/assets/BlackAsylumDEMO-KCFonts.ttf");
+}
 
 :root {
-  --title-text: #e7f7ff;
-  --small-text: #f5f4f4;
+  --title-text: #f8f2f1;
+  --small-text: #f5f4f4ec;
   --link-color: #f5f4f4;
   --red-text: #dd3a3a;
 }
@@ -14,9 +24,10 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   line-height: 1.4;
   background: #000;
+  overflow-x: hidden;
 }
 
 nav {
@@ -27,42 +38,65 @@ nav {
   overflow: hidden;
   z-index: 10;
   background: transparent;
-  height: 100px;
+  height: 140px;
 }
 
 .nav-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   z-index: 10;
-  height: 80px;
-  padding-top: 1.5rem;
-  border-bottom: 1px solid white;
+  height: auto;
+  /* 
+  border-bottom: 1px solid white; */
 }
 
 .nav-logo {
-  width: 250px;
+  width: 190px;
+  z-index: -10;
+  position: absolute;
+  top: -1.2rem;
+  left: 0;
+}
+
+.nav-logo-container {
+  position: relative;
+}
+
+.nav-logo-container a {
+  text-decoration: none;
+}
+
+.nav-logo-container h2 {
+  color: var(--title-text);
+  z-index: 100;
+  padding: 2rem 0 0 2.5rem;
+  font-family: Asylum;
+  font-size: 2rem;
+  font-weight: 300;
+  opacity: 0.9;
 }
 
 .nav-link-container {
   display: flex;
-
-  justify-content: space-between;
+  width: 25%;
+  justify-content: space-around;
 }
 
 .nav-link-container a {
+  width: 100%;
   z-index: 10;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 25px;
   color: var(--link-color);
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
-  opacity: 0.8;
+  /* opacity: 0.9; */
 }
 
 .nav-link-container a:hover {
   color: var(--red-text);
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--red-text);
   cursor: pointer;
 }
 
@@ -109,28 +143,29 @@ nav {
   justify-content: flex-start;
   height: 100%;
   width: 85%;
-  padding: 200px;
+  padding: 21rem 15rem 15rem;
 }
 
 .content {
   z-index: 10;
-  max-width: 60%;
+  max-width: 50%;
   position: relative;
 }
 
 .content h1 {
-  color: #fff;
-  font-weight: 700;
-  font-size: 3.35rem;
-  line-height: 1.1;
+  color: var(--title-text);
+  font-family: "IM Fell English SC";
+  font-weight: 400;
+  font-size: 3.8rem;
+  line-height: 1;
   margin-bottom: 10px;
 }
 
 .content p {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.767);
   font-size: 1.5rem;
   font-weight: 300;
-  max-width: 75%;
+  max-width: 88%;
 }
 
 .btn {
@@ -149,4 +184,138 @@ nav {
 
 .btn:hover {
   transform: scale(0.98);
+}
+
+#about {
+  padding: 3.5rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.award-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0 9rem;
+}
+
+blockquote {
+  margin-top: 2rem;
+}
+
+.award-logo-container p {
+  color: var(--small-text);
+  font-size: 1.5rem;
+}
+
+.award-logo-container footer {
+  color: var(--small-text);
+  margin-left: 3rem;
+}
+
+.awards {
+  height: 200px;
+  opacity: 0.8;
+}
+
+#calendar {
+  padding: 3.5rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.calendar-flex-container {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.calendar-text-container {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 50%;
+}
+
+.calendar-text-container h3 {
+  color: var(--red-text);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: Asylum;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.calendar-text-container h1 {
+  font-size: 3rem;
+  color: var(--title-text);
+  font-weight: 400;
+  line-height: 1;
+  font-family: "IM Fell English SC";
+}
+
+.calendar-categories {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 90%;
+}
+
+.calendar-categories h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--red-text);
+}
+
+.calendar-categories p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--small-text);
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 2rem;
+}
+
+.category-img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 1.8rem;
+  object-fit: cover;
+  background-position: center;
+  filter: brightness(85%);
+}
+
+.calendar-container {
+  flex: 1;
+}
+
+.calendar {
+  height: 600px;
+  width: 960px;
+}
+
+.hours h3,
+.hours h4,
+.tickets h3 {
+  color: var(--title-text);
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
 }
