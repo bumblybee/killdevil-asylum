@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+:root {
+  --title-text: #e7f7ff;
+  --small-text: #f5f4f4;
+  --link-color: #f5f4f4;
+  --red-text: #dd3a3a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  background: #000;
+}
+
+nav {
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  background: transparent;
+  height: 100px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  height: 80px;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid white;
+}
+
+.nav-logo {
+  width: 250px;
+}
+
+.nav-link-container {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.nav-link-container a {
+  z-index: 10;
+  display: inline-block;
+  margin-right: 30px;
+  color: var(--link-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.nav-link-container a:hover {
+  color: var(--red-text);
+  border-bottom: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.nav-link-container a:last-child {
+  color: var(--red-text);
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  background-size: cover;
+  background-position: center center;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(17, 15, 15, 0.651), rgba(97, 26, 26, 0.521));
+  backdrop-filter: brightness(70%);
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 85%;
+  padding: 200px;
+}
+
+.content {
+  z-index: 10;
+  max-width: 60%;
+  position: relative;
+}
+
+.content h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3.35rem;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.content p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 75%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 40px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.05rem;
+  background: var(--red-text);
+  border: 1px solid var(--primary-color);
+  border-radius: 2px;
+  margin-top: 25px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
