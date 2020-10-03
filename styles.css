@@ -35,7 +35,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 10;
   background: transparent;
   height: 140px;
@@ -60,6 +60,8 @@ nav {
 
 .nav-logo-container {
   position: relative;
+  animation: logoAnimation 1.2s linear;
+  transition: animation ease;
 }
 
 .nav-logo-container a {
@@ -69,9 +71,9 @@ nav {
 .nav-logo-container h2 {
   color: var(--title-text);
   z-index: 100;
-  padding: 2rem 0 0 2.5rem;
+  padding: 2rem 0 0 2.2rem;
   font-family: Asylum;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 300;
   opacity: 0.9;
 }
@@ -86,22 +88,17 @@ nav {
   width: 100%;
   z-index: 10;
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 2rem;
   color: var(--link-color);
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
-  /* opacity: 0.9; */
 }
 
 .nav-link-container a:hover {
   color: var(--red-text);
-  border-bottom: 2px solid var(--red-text);
+  border-top: 2px solid var(--red-text);
   cursor: pointer;
-}
-
-.nav-link-container a:last-child {
-  color: var(--red-text);
 }
 
 .video-container {
@@ -222,16 +219,35 @@ blockquote {
   opacity: 0.8;
 }
 
-#calendar {
-  padding: 3.5rem;
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 90%;
-  margin: 0 auto;
+.details {
+  color: var(--small-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5rem 0;
 }
 
-.calendar-flex-container {
+.details-img img {
+  width: 450px;
+  height: 500px;
+  object-fit: cover;
+
+  filter: brightness(85%);
+}
+
+.details .text {
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+#visit {
+  padding: 0 3rem;
+  text-align: left;
+  width: 90%;
+  margin: 8rem auto 0;
+}
+
+.visit-flex-container {
   height: 100%;
   width: 75%;
   display: flex;
@@ -240,7 +256,7 @@ blockquote {
   margin: 0 auto;
 }
 
-.calendar-text-container {
+.visit-text-container {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
@@ -248,7 +264,7 @@ blockquote {
   width: 50%;
 }
 
-.calendar-text-container h3 {
+.visit-text-container h3 {
   color: var(--red-text);
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -257,7 +273,7 @@ blockquote {
   font-size: 1.8rem;
 }
 
-.calendar-text-container h1 {
+.visit-text-container h1 {
   font-size: 3rem;
   color: var(--title-text);
   font-weight: 400;
@@ -265,20 +281,20 @@ blockquote {
   font-family: "IM Fell English SC";
 }
 
-.calendar-categories {
+.visit-categories {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
   width: 90%;
 }
 
-.calendar-categories h1 {
+.visit-categories h1 {
   font-size: 2.5rem;
   font-weight: 500;
   color: var(--red-text);
 }
 
-.calendar-categories p {
+.visit-categories p {
   font-size: 1.5rem;
   font-weight: 300;
   color: var(--small-text);
@@ -306,8 +322,8 @@ blockquote {
 }
 
 .calendar {
-  height: 600px;
-  width: 960px;
+  height: 500px;
+  width: 700px;
 }
 
 .hours h3,
@@ -318,4 +334,32 @@ blockquote {
   font-weight: 400;
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
+}
+
+.location {
+  color: var(--small-text);
+  padding: 6rem 0 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.location a {
+  color: var(--red-text);
+}
+
+.address {
+  margin-bottom: 0.7rem;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: scale(5) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
 }
