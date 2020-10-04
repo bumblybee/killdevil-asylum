@@ -228,10 +228,10 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 0 8rem;
+  padding: 1rem 0 8rem;
 }
 
-blockquote {
+.award-logo-container blockquote {
   margin-top: 2rem;
 }
 
@@ -242,7 +242,7 @@ blockquote {
 
 .award-logo-container footer {
   color: var(--small-text);
-  margin-left: 3rem;
+  margin-left: 4rem;
 }
 
 .awards {
