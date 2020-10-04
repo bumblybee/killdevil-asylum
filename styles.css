@@ -9,7 +9,7 @@
   --title-text: #f8f2f1f3;
   --small-text: #f5f4f4ec;
   --link-color: #f5f4f4;
-  --red-text: #91201c;
+  --red-text: #8f2d2a;
 }
 
 * {
@@ -282,7 +282,7 @@ nav {
 .details .text {
   width: 50%;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #visit {
@@ -299,7 +299,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 
 .visit-text-container {
@@ -310,13 +310,13 @@ nav {
   width: 50%;
 }
 
-.visit-text-container h3 {
-  color: var(--red-text);
-  text-transform: uppercase;
-  margin-bottom: 0.4rem;
-  font-family: Asylum;
-  font-weight: 300;
-  font-size: 1.8rem;
+#visit h2 {
+  font-size: 1.5rem;
+  /* font-family: "IM Fell English SC"; */
+  font-weight: 400;
+  display: block;
+  margin-top: -1rem;
+  text-align: center;
 }
 
 .visit-text-container h1 {
@@ -433,6 +433,7 @@ nav {
 .corn-body {
   color: var(--small-text);
   width: 80%;
+  font-weight: 300;
   height: auto;
   margin: 0 auto;
   display: flex;
@@ -441,7 +442,7 @@ nav {
 .corn-body-text {
   padding: 2rem;
   font-size: 1.5rem;
-  width: 55%;
+  width: 65%;
   line-height: 1.5;
 }
 
@@ -772,6 +773,11 @@ nav {
     width: 380px;
   }
 
+  .history-header,
+  .calendar-header {
+    font-size: 3.5rem;
+  }
+
   .details {
     flex-direction: column;
     padding: 1rem 0;
@@ -799,6 +805,7 @@ nav {
     width: 100%;
     flex-direction: column;
     margin: 0;
+    padding-top: 1rem;
   }
 
   .visit-text-container {
@@ -810,8 +817,8 @@ nav {
     font-size: 1.6rem;
   }
 
-  .visit-text-container h3 {
-    margin-bottom: 0;
+  #visit h2 {
+    font-size: 1.2rem;
   }
 
   .visit-categories {
