@@ -1,17 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto+Condensed:wght@300;400;500&display=swap");
 
 @font-face {
-  font-family: Insomnia;
-  src: url("/assets/Insomnia\ 1.ttf");
-}
-
-@font-face {
   font-family: Asylum;
   src: url("/assets/BlackAsylumDEMO-KCFonts.ttf");
 }
 
 :root {
-  --title-text: #f8f2f1;
+  --title-text: #f8f2f1f3;
   --small-text: #f5f4f4ec;
   --link-color: #f5f4f4;
   --red-text: #dd3a3a;
@@ -22,12 +17,19 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  width: 100%;
+}
 body {
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1.4;
   background: #000;
   overflow-x: hidden;
+  color: var(--small-text);
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {
@@ -35,7 +37,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  /* overflow: hidden; */
+
   z-index: 10;
   background: transparent;
   height: 140px;
@@ -46,22 +48,20 @@ nav {
   justify-content: space-between;
   z-index: 10;
   height: auto;
-  /* 
-  border-bottom: 1px solid white; */
 }
 
 .nav-logo {
-  width: 190px;
+  width: 220px;
   z-index: -10;
   position: absolute;
   top: -1.2rem;
   left: 0;
+  transition: animation ease;
 }
 
 .nav-logo-container {
   position: relative;
   animation: logoAnimation 1.2s linear;
-  transition: animation ease;
 }
 
 .nav-logo-container a {
@@ -71,15 +71,16 @@ nav {
 .nav-logo-container h2 {
   color: var(--title-text);
   z-index: 100;
-  padding: 2rem 0 0 2.2rem;
+  padding: 1.8rem 0 0 1.8rem;
   font-family: Asylum;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 300;
   opacity: 0.9;
 }
 
 .nav-link-container {
   display: flex;
+  height: auto;
   width: 25%;
   justify-content: space-around;
 }
@@ -88,7 +89,7 @@ nav {
   width: 100%;
   z-index: 10;
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   color: var(--link-color);
   font-size: 1.1rem;
   font-weight: 500;
@@ -99,6 +100,10 @@ nav {
   color: var(--red-text);
   border-top: 2px solid var(--red-text);
   cursor: pointer;
+}
+
+.video-section {
+  position: relative;
 }
 
 .video-container {
@@ -128,9 +133,10 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(rgba(17, 15, 15, 0.651), rgba(97, 26, 26, 0.521));
+  right: 0;
+  bottom: 0;
+
+  background: radial-gradient(rgba(20, 19, 19, 0.951), rgba(97, 26, 26, 0.421));
   backdrop-filter: brightness(70%);
 }
 
@@ -168,7 +174,7 @@ nav {
 .btn {
   display: inline-block;
   padding: 10px 40px;
-  color: #fff;
+  color: #ffffffd8;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 1.05rem;
@@ -194,6 +200,7 @@ nav {
 
 .award-logo-container {
   display: flex;
+  height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -216,12 +223,21 @@ blockquote {
 
 .awards {
   height: 200px;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.history-header {
+  color: var(--red-text);
+  text-align: center;
+  font-family: "IM Fell English SC";
+  font-size: 3.5rem;
+  letter-spacing: 0.3rem;
 }
 
 .details {
   color: var(--small-text);
   display: flex;
+  height: auto;
   align-items: center;
   justify-content: space-around;
   padding: 5rem 0;
@@ -283,6 +299,7 @@ blockquote {
 
 .visit-categories {
   display: flex;
+  height: auto;
   flex-direction: column;
   margin-top: 2rem;
   width: 90%;
@@ -302,6 +319,7 @@ blockquote {
 
 .category {
   display: flex;
+  height: auto;
   align-items: center;
   justify-content: left;
   margin-bottom: 2rem;
@@ -343,6 +361,7 @@ blockquote {
   align-items: flex-end;
   justify-content: space-between;
   font-size: 1.2rem;
+  height: auto;
   width: 75%;
   margin: 0 auto;
 }
@@ -355,11 +374,193 @@ blockquote {
   margin-bottom: 0.7rem;
 }
 
+.corn-header-content {
+  width: 100%;
+  position: relative;
+}
+
+.corn-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 550px;
+  filter: brightness(70%);
+}
+
+.corn-header {
+  color: var(--title-text);
+  padding: 2rem 2.5rem;
+  background: rgba(107, 104, 104, 0.2);
+  text-shadow: 0 2px 2px rgba(190, 190, 190, 0.22);
+
+  font-size: 1.7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+}
+
+.corn-body {
+  color: var(--small-text);
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.corn-body-text {
+  padding: 2rem;
+  font-size: 1.5rem;
+  width: 55%;
+  line-height: 1.5;
+}
+
+.corn-body-text h1 {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  font-family: "IM Fell English SC";
+  color: var(--red-text);
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.corn-categories {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 65%;
+  height: auto;
+  margin: 2.5rem auto 0;
+}
+
+.corn-categories h1 {
+  color: var(--red-text);
+  font-family: "IM Fell English SC";
+}
+
 @keyframes logoAnimation {
   0% {
-    transform: scale(5) rotate(180deg);
+    transform: scale(5);
+  }
+  50% {
+    transform: scale(10);
   }
   100% {
     transform: scale(1) rotate(0);
+  }
+}
+
+@media (max-width: 620px) {
+  .nav {
+    width: 100vw;
+  }
+
+  .nav-link-container {
+    width: auto;
+  }
+
+  .nav-link-container a {
+    font-size: 0.95rem;
+    margin-right: 20px;
+  }
+
+  .nav-logo {
+    width: 120px;
+  }
+
+  .nav-logo-container h2 {
+    font-size: 1.5rem;
+    padding: 0 1rem 1rem;
+  }
+
+  .video-section {
+    position: relative;
+  }
+
+  .video-container {
+    z-index: -10;
+  }
+
+  .video-container:after {
+    object-fit: cover;
+  }
+
+  .content-wrapper {
+    padding: 9rem 3rem 5rem;
+    width: 100%;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content-p {
+    font-size: 1.2rem;
+  }
+
+  #about {
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .award-logo-container {
+    padding: 1rem;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .awards {
+    height: 70px;
+    width: 350px;
+  }
+
+  .details {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .details-img img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .details .text {
+    width: 94%;
+  }
+
+  #visit {
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  .visit-flex-container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .visit-text-container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .visit-text-container h1 {
+    font-size: 2.3rem;
+  }
+
+  .visit-categories {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .calendar {
+    height: 300px;
+    width: 340px;
   }
 }
