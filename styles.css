@@ -746,6 +746,14 @@ nav {
     max-width: 100%;
   }
 
+  .award-logo-container p {
+    font-size: 1.3rem;
+  }
+
+  .award-logo-container footer {
+    margin-left: 2.7rem;
+  }
+
   .awards {
     height: 80px;
     width: 380px;
@@ -877,10 +885,6 @@ nav {
   .award-logo-container {
     max-width: 100%;
     padding: 0.5rem;
-  }
-
-  .award-logo-container p {
-    font-size: 1.3rem;
   }
 
   .awards {
