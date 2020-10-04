@@ -452,7 +452,7 @@ blockquote {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 1024px) {
   nav {
     width: 100vw;
     height: 60px;
