@@ -246,6 +246,7 @@ nav {
 .award-logo-container footer {
   color: var(--small-text);
   margin-left: 4rem;
+  font-weight: 300;
 }
 
 .awards {
@@ -281,6 +282,7 @@ nav {
 .details .text {
   width: 50%;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 #visit {
@@ -784,6 +786,7 @@ nav {
 
   .details .text {
     width: 90%;
+    font-weight: 300;
   }
 
   #visit {
