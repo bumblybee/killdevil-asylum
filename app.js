@@ -13,5 +13,7 @@ hamburger.addEventListener("click", () => {
     hamburgerIcon.classList.replace("fa-bars", "fa-times");
   } else {
     hamburgerIcon.classList.replace("fa-times", "fa-bars");
+    console.log(window.location.href);
+    hamburger.href = window.location.href;
   }
 });

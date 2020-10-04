@@ -55,7 +55,8 @@ li {
   list-style-type: none;
 }
 
-.fa-bars {
+.fa-bars,
+.fa-times {
   display: none;
 }
 
@@ -680,6 +681,12 @@ nav {
   .fa-bars {
     display: block;
     color: var(--small-text);
+    cursor: pointer;
+  }
+
+  .fa-times {
+    display: block;
+    color: var(--red-text);
     cursor: pointer;
   }
 
