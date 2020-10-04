@@ -585,30 +585,28 @@ blockquote {
   .corn-header {
     padding: 1rem;
     font-size: 1.5rem;
-    width: 85%;
+    width: 60%;
     text-align: center;
   }
 
   .corn-img img {
-    height: 300px;
+    height: 500px;
   }
 
   .corn-body {
-    flex-direction: column;
-    width: 100%;
+    width: 90%;
     padding: 1rem;
   }
 
   .corn-body-text {
-    width: 100%;
+    width: 80%;
     padding: 1rem;
   }
 
   .corn-categories {
-    width: 95%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 2rem auto;
+    /* justify-content: center;
+    align-items: center; */
   }
 }
 
