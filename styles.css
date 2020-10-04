@@ -26,6 +26,7 @@ body {
   background: #000;
   overflow-x: hidden;
   color: var(--small-text);
+  width: 100%;
 }
 
 a {
@@ -578,6 +579,35 @@ blockquote {
     width: 85%;
     font-size: 1rem;
   }
+
+  .corn-header {
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 85%;
+    text-align: center;
+  }
+
+  .corn-img img {
+    height: 300px;
+  }
+
+  .corn-body {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .corn-body-text {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .corn-categories {
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 375px) {
@@ -596,5 +626,9 @@ blockquote {
   .awards {
     height: 70px;
     width: 310px;
+  }
+
+  .location {
+    width: 95%;
   }
 }
