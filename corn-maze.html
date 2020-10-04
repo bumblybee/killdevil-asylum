@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ff7801964a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
     <title>KillDevil Corn Maze</title>
   </head>
@@ -21,10 +25,16 @@
         </div>
 
         <div class="nav-link-container">
-          <a href="index.html">Home</a>
-          <a href="index.html#calendar">Calendar</a>
-          <a href="index.html#history">History</a>
-          <a href="corn-maze.html">Corn Maze</a>
+          <div class="menu-icon">
+            <a id="hamburger" href="#"><i class="fas fa-bars"></i></a>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="index.html#calendar">Calendar</a></li>
+            <li><a href="index.html#history">History</a></li>
+            <li><a href="corn-maze.html">Corn Maze</a></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -42,15 +52,16 @@
         <div class="corn-body-text">
           <h1>Legend</h1>
           <p>
-            Legend has it that over the years, patients from KillDevil would
-            escape the institution and hide out among the surrounding corn
-            fields, some never to be seen again.
+            Legend has it that in KillDevil's early days, patients would escape
+            the institution and hide out among the surrounding corn fields, some
+            never to be seen again.
           </p>
           <br />
           <p>
-            Farmers have reported odd sightings in the fields since the
-            re-opening of KillDevil, so we decided to clear a path to see what's
-            going on for ourselves. Can you help us solve the mystery?
+            Since the re-opening of KillDevil, again local farmers have reported
+            seeing patients wandering the fields at night, yet staff members say
+            no one is missing from the asylum. We decided to clear a path to see
+            what's going on for ourselves. Can you help us solve the mystery?
           </p>
         </div>
       </div>
@@ -84,5 +95,6 @@
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
