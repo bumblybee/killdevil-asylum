@@ -17,9 +17,11 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   width: 100%;
 }
+
 body {
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1.4;
@@ -884,27 +886,43 @@ nav {
 
   .award-logo-container {
     max-width: 100%;
-    padding: 0.5rem;
+    padding: 0;
   }
 
   .awards {
     height: 70px;
-    width: 340px;
+    max-width: 320px;
   }
 
   .details .text {
     font-size: 1.3rem;
   }
 
+  .history-header {
+    font-size: 3rem;
+  }
+
+  #about {
+    overflow: hidden;
+  }
+
+  .details {
+    max-width: 100%;
+  }
+
   #visit {
     margin: 2rem 0;
     text-align: unset;
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
   }
 
   .visit-text-container h1 {
     font-size: 1.5rem;
+  }
+
+  .calendar {
+    width: 320px;
   }
 
   .location {
