@@ -177,7 +177,7 @@ nav {
 }
 
 .content {
-  z-index: 10;
+  z-index: 1;
   max-width: 50%;
   position: relative;
 }
