@@ -791,11 +791,6 @@ nav {
     display: block;
   }
 
-  .details .text {
-    width: 90%;
-    font-weight: 300;
-  }
-
   #visit {
     padding: 1rem;
     margin: 2rem auto;
