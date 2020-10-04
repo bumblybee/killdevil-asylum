@@ -201,12 +201,11 @@ nav {
 .btn {
   display: inline-block;
   padding: 10px 40px;
-  color: #ffffffd8;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 1.05rem;
+  color: #f8f2f1e3;
+
+  font-size: 1.15rem;
   background: var(--red-text);
-  border: 1px solid var(--primary-color);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 2px;
   margin-top: 25px;
   text-decoration: none;
@@ -217,7 +216,7 @@ nav {
 }
 
 #about {
-  padding: 3.5rem 3.5rem 3rem;
+  padding: 3.5rem 3.5rem 1rem;
   text-align: left;
   display: grid;
   grid-template-columns: 1fr;
@@ -254,11 +253,12 @@ nav {
   opacity: 0.9;
 }
 
-.history-header {
+.history-header,
+.calendar-header {
   color: var(--red-text);
   text-align: center;
   font-family: "IM Fell English SC";
-  font-size: 3.5rem;
+  font-size: 4rem;
   letter-spacing: 0.3rem;
 }
 
@@ -268,7 +268,7 @@ nav {
   height: auto;
   align-items: center;
   justify-content: space-around;
-  padding: 5rem 0;
+  padding: 5rem 0 2rem;
 }
 
 .details-img img {
@@ -299,6 +299,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 
 .visit-text-container {
@@ -312,14 +313,14 @@ nav {
 .visit-text-container h3 {
   color: var(--red-text);
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 0.4rem;
   font-family: Asylum;
   font-weight: 300;
   font-size: 1.8rem;
 }
 
 .visit-text-container h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--title-text);
   font-weight: 400;
   line-height: 1;
@@ -330,7 +331,7 @@ nav {
   display: flex;
   height: auto;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   width: 90%;
 }
 
@@ -909,7 +910,8 @@ nav {
     font-size: 1.3rem;
   }
 
-  .history-header {
+  .history-header,
+  .calendar-header {
     font-size: 3rem;
   }
 
