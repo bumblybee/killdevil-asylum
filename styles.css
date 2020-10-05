@@ -9,7 +9,7 @@
   --title-text: #f8f2f1f3;
   --small-text: #f5f4f4ec;
   --link-color: #f5f4f4;
-  --red-text: #9e302c;
+  --red-text: #a2000b;
 }
 
 * {
@@ -173,12 +173,12 @@ nav {
   justify-content: flex-start;
   height: 100%;
   width: 85%;
-  padding: 21rem 15rem 15rem;
+  padding: 15.5rem 15rem 15rem;
 }
 
 .content {
   z-index: 1;
-  max-width: 50%;
+  max-width: 55%;
   position: relative;
 }
 
@@ -204,7 +204,7 @@ nav {
   color: #f8f2f1e3;
 
   font-size: 1.15rem;
-  background: var(--red-text);
+  background: #db0918;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 2px;
   margin-top: 25px;
@@ -338,7 +338,7 @@ nav {
 .visit-categories h1 {
   font-size: 2.5rem;
   font-weight: 500;
-  color: var(--red-text);
+  color: #db0918;
 }
 
 .visit-categories p {
