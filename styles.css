@@ -331,6 +331,7 @@ nav {
   display: flex;
   height: auto;
   flex-direction: column;
+
   margin-top: 2.5rem;
   width: 90%;
 }
@@ -342,7 +343,7 @@ nav {
 }
 
 .visit-categories p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 300;
   color: var(--small-text);
 }
@@ -382,6 +383,10 @@ nav {
   font-weight: 400;
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
+}
+
+.tickets span {
+  font-weight: 300;
 }
 
 .location {
